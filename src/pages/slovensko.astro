@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <div class="wrapper">
+    <img src="/slovakiaHigh.svg" />
+    <div class="side_content">
+      <h3></h3>
+      <div class="container">
+        <button>Bratislavský kraj</button>
+        <button>Trnavský kraj</button>
+        <button>Trenčianský kraj</button>
+        <button>Nitrianský kraj</button>
+        <button>žilinský kraj</button>
+        <button>Banskobystrický kraj</button>
+        <button>Prešovský kraj</button>
+        <button>Košický kraj</button>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    gap: 64px;
+  }
+  
+  img {
+    flex: 0 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    height: 48px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 24px;
+    padding: 0 64px;
+
+    color: #000000;
+    border: 2px solid #000000;
+    background-color: transparent;
+
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+</style>
